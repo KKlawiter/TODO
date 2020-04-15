@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
 
-html,
+html {
+  margin: 0;
+  padding: 0;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -10,12 +18,10 @@ button {
   margin: 0;
   padding: 0;
   border: 0;
-  background: none;
   font-size: 100%;
   vertical-align: baseline;
   font-family: inherit;
   font-weight: inherit;
-  color: inherit;
   -webkit-appearance: none;
   appearance: none;
   -webkit-font-smoothing: antialiased;
@@ -23,10 +29,8 @@ button {
 }
 
 body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 1vw 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
-  background: black;
-  color: black;
   min-width: 230px;
   max-width: 550px;
   margin: 0 auto;
@@ -39,6 +43,7 @@ body {
 button,
 input[type="checkbox"] {
   outline: none;
+      color: black;
 }
 
 .hidden {
@@ -46,39 +51,32 @@ input[type="checkbox"] {
 }
 
 .todoapp {
-  background: #fff;
-  margin: 130px 0 40px 0;
+  margin: 160px 20px 40px 10px;
   position: relative;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
-              0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 .todoapp input::-webkit-input-placeholder {
   font-style: italic;
   font-weight: 300;
-  color: #e6e6e6;
 }
 
 .todoapp input::-moz-placeholder {
   font-style: italic;
   font-weight: 300;
-  color: #e6e6e6;
 }
 
 .todoapp input::input-placeholder {
   font-style: italic;
   font-weight: 300;
-  color: #e6e6e6;
 }
 
 .todoapp h1 {
   position: absolute;
   top: -155px;
   width: 100%;
-  font-size: 100px;
+  font-size: 8vw;
   font-weight: 100;
   text-align: center;
-  color: #B30707;
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
@@ -96,7 +94,6 @@ input[type="checkbox"] {
   line-height: 1.4em;
   border: 0;
   outline: none;
-  color: inherit;
   padding: 6px;
   border: 1px solid #999;
   box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -135,12 +132,10 @@ label[for='toggle-all'] {
 .toggle-all:before {
   content: '❯';
   font-size: 22px;
-  color: #e6e6e6;
   padding: 10px 27px 10px 27px;
 }
 
 .toggle-all:checked:before {
-  color: #737373;
 }
 
 .todo-list {
@@ -184,13 +179,12 @@ label[for='toggle-all'] {
   top: 0;
   bottom: 0;
   margin: auto 0;
-  border: none; /* Mobile Safari */
-  -webkit-appearance: none;
-  appearance: none;
+
 }
 
 .todo-list li .toggle:after {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+  color: black;
 }
 
 .todo-list li .toggle:checked:after {
@@ -208,7 +202,6 @@ label[for='toggle-all'] {
 }
 
 .todo-list li.completed label {
-  color: #d9d9d9;
   text-decoration: line-through;
 }
 
@@ -222,13 +215,11 @@ label[for='toggle-all'] {
   height: 40px;
   margin: auto 0;
   font-size: 30px;
-  color: #cc9a9a;
   margin-bottom: 11px;
   transition: color 0.2s ease-out;
 }
 
 .todo-list li .destroy:hover {
-  color: #af5b5e;
 }
 
 .todo-list li .destroy:after {
@@ -248,7 +239,6 @@ label[for='toggle-all'] {
 }
 
 .footer {
-  color: #777;
   padding: 10px 15px;
   height: 20px;
   text-align: center;
@@ -293,7 +283,6 @@ label[for='toggle-all'] {
 }
 
 .filters li a {
-  color: inherit;
   margin: 3px;
   padding: 3px 7px;
   text-decoration: none;
@@ -325,7 +314,6 @@ html .clear-completed:active {
 
 .info {
   margin: 65px auto 0;
-  color: #bfbfbf;
   font-size: 10px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-align: center;
